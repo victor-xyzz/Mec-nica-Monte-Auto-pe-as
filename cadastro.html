@@ -16,5 +16,28 @@
         <a href="cadastro.html">Cadastro |</a>
         </nav>
     </header>
+
+    <main>
+        <h1>Cadastro do cliente e veículo</h1>
+        <p>Preencha o formulário abaixo para se cadastrar e aproveitar nossos serviços e promoções.</p>
+        <form action="processar_cadastro.php" method="post">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="cu">Seu Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone" required><br><br>
+
+            <label for="senha">Senha:</label><br>
+            <input type="password" id="senha" name="senha" required><br><br>
+
+            <label for="veiculo">Veículo:</label><br>
+            <input type="text" id="veiculo" name="veiculo" required><br><br>
+
+            <input type="submit" value="Cadastrar">
+        </form>
+    </main>
 </body>
 </html>
