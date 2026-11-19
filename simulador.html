@@ -16,5 +16,54 @@
         <a href="cadastro.html">Cadastro |</a>
         </nav>
     </header>
+
+    <main>  
+        <h1>Simulador de Orçamento</h1>
+        <p>Selecione peças e serviços desejados, e o simulador calculará o preço total aproximado.</p>
+
+        <div>
+            <input type="checkbox" id="troca-oleo" name="servicos" value="180">
+            <label for="troca-oleo">Kit troca de óleo (R$ 180,00)</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="pastilhas-freio" name="servicos" value="145">
+            <label for="pastilhas-freio">Pastilhas de freio dianteiras (R$ 145,00)</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="bateria" name="servicos" value="650">
+            <label for="bateria">Bateria (R$ 650,00)</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="alinhamento" name="servicos" value="300">
+            <label for="alinhamento">Alinhamento 3D e Balanceamento (R$ 300,00)</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="limpeza-bicos" name="servicos" value="250">
+            <label for="limpeza-bicos">Limpeza de Bicos e Injeção Eletrônica (R$ 250,00)</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="revisao" name="servicos" value="350">
+            <label for="revisao">Revisão Completa de Suspensão (R$ 350,00)</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="cliente-cadastrado">
+            <label for="cliente-cadastrado">Sou cliente cadastrado (10% de desconto)</label>
+        </div>
+
+
+        <button type="button" id="btn-calcular">Calcular Total</button>
+
+        <h2 id="resultado-total">Total Estimado: R$ 0,00</h2>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mecânica Monte Auto-peças. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
