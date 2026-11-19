@@ -10,17 +10,17 @@
     <header>
         <img src="img/logomonte.jpg" alt="Logo da Mecânica Monte Auto-peças" width="80" height="80">
         <nav>
-        <a href="index.html">Home </a>
-        <a href="sobre.html">Sobre Nós </a>
-        <a href="catalogo.html">Catálogo </a> 
-        <a href="simulador.html">Simulador de Preços </a>
-        <a href="cadastro.html">Cadastro </a>
+            <a href="index.html">Home </a>
+            <a href="sobre.html">Sobre Nós </a>
+            <a href="catalogo.html">Catálogo </a> 
+            <a href="simulador.html">Simulador de Preços </a>
+            <a href="cadastro.html">Cadastro </a>
         </nav>
     </header>
 
     <main>  
         <h1>Simulador de Orçamento</h1>
-        <p>Selecione peças e serviços desejados, e o simulador calculará o preço total aproximado.</p>
+        <p>Selecione as peças e serviços desejados. Ao valor dos itens será acrescida a <strong>taxa fixa de mão de obra de R$ 100,00</strong>.</p>
 
         <div>
             <input type="checkbox" id="troca-oleo" name="servicos" value="180">
@@ -51,12 +51,13 @@
             <input type="checkbox" id="revisao" name="servicos" value="350">
             <label for="revisao">Revisão Completa de Suspensão (R$ 350,00)</label>
         </div>
-
+        <div>
+        <p><strong>Mão de obra padrão: R$ 100,00</strong></p>
+        </div>
         <div>
             <input type="checkbox" id="cliente-cadastrado">
-            <label for="cliente-cadastrado">Sou cliente cadastrado (10% de desconto)</label>
+            <label for="cliente-cadastrado">Sou cliente cadastrado (10% de desconto na mão de obra — sai por R$ 90,00)</label>
         </div>
-
 
         <button type="button" id="btn-calcular">Calcular Total</button>
 
@@ -66,5 +67,7 @@
     <footer>
         <p>&copy; 2026 Mecânica Monte Auto-peças. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="js/simulador.js"></script>
 </body>
 </html>
